@@ -17,6 +17,7 @@ public class NaukriUpdate {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Praveen\\eclipse-workspace\\SRYA\\JenkinsProject\\driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.naukri.com/mnjuser/homepage");
+		driver.manage().window().maximize();
 		driver.findElement(By.id("usernameField")).sendKeys("praveene94kumar@gmail.com");
 		driver.findElement(By.id("passwordField")).sendKeys("albuquerque@07" +Keys.ENTER);
 		Thread.sleep(3000);
