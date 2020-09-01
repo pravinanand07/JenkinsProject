@@ -27,7 +27,7 @@ public class NaukriUpdate {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView(true)", findElement);
 		driver.findElement(By.xpath("(//span[@class='edit icon'])[3]")).click();
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		driver.findElement(By.xpath("(//a[@class='material-icons close'])[5]")).click();
 		driver.findElement(By.xpath("//label[@for='no']")).click();
 		Thread.sleep(3000);
